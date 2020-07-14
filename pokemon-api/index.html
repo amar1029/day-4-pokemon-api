@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/litera/bootstrap.min.css"
+    />
+    <title>Pokemon Search</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark mb-3" style="background-color:rgb(255, 80, 80)">
+      <div class="container">
+        <a href="#" class="navbar-brand" style="color: white;">Pokemon Finder</a>
+      </div>
+    </nav>
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1>Search Pokemon Name</h1>
+        <p class="lead">Enter a Pokemon's name to fetch their descriptions.</p>
+        <div class="input-group mb-3">
+          <input type="text" id="pokeName" class="form-control" placeholder="Pokemon Name...">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="searchBtn">Search</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="pokeProfile"></div>
+      <div class="alert alert-danger" role="alert" id="alert">Error: Pokemon Not Found
+    </div>
+    </div>
+
+    <footer class="mt-5 p-3 text-center bg-light border">
+      Pokemon Finder &copy;
+    </footer>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>>
+    <script src="pokemon.js"></script>
+  </body>
+</html>
